@@ -1,1 +1,6 @@
 # Emotionrecog
+I started a small project in which I tried to simulate a very interesting approach to machine learning. What I first did was to choose Python3 as the programming language to develop my project. I first started looking for libraries to simulate the emotions recognition and I found out about OpenCV and really made me interested about it.
+The way I built my project was the following. First I downloaded the correspondent libraries in python such us OpenCV, Numpy and so on.
+I read about Haar Cascades, which are basically classifiers that are used to detect an object which they have been trained to detect from the source.
+I replicate this by first getting 1700 negative images, these negative images means images that doesn’t contain the object that I want to further detect because later on I am going to superimpose the desired object in those images creating the positive images that later on when the webcam turns on, the script is able to detect the object.
+I did it with a happy face and a bored face, I cropped the 1700 negative images to be 100x100 pixels with a script and made them black and white because Opencv works with that faster and better. I created the positive samples and then I trained the cascades which gave me a  XML file which is called in my main detect_faces.py to detected happy face or bored face
